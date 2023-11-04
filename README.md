@@ -1,2 +1,2 @@
-# RoboticsSoftwareEngineer_NanodegreeUdacity
-Udacity Nanodegree in Robotics Software Engineer
+# Udacity Nanodegree | Robotics Software Engineer
+
