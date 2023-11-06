@@ -1,0 +1,3 @@
+[submodule "projects/project1"]
+	path = projects/project1
+	url = git@github.com:SanjarNormuradov/RoboticsSoftwareEngineer_Project1.git
