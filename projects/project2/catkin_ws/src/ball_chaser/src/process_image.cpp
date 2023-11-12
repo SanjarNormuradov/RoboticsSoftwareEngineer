@@ -24,8 +24,7 @@ void process_image_callback(const sensor_msgs::Image img)
 {
     int white_pixel = 255;
     std::vector<int> white_pixel_id;
-    // ROS_INFO_STREAM("\nDriving the robot to the white ball");
-    std::cout << "height: " << img.height << " width: " << img.width << " step: " << img.step << std::endl;
+    ROS_INFO_STREAM("Driving the robot to the white ball");
     // Loop through each pixel in the image and check if its equal to the first one
     for (int i = 0; i < img.height * img.step; i++) {
         if (img.data[i] == white_pixel) {
@@ -37,16 +36,13 @@ void process_image_callback(const sensor_msgs::Image img)
         // If there is no white ball, stop the robot
         drive_robot(0.0, 0.0);
     } else {
-        std::cout << "white_pixel_id[0]: " << white_pixel_id[0] << std::endl;
         int center_id = white_pixel_id[0] % img.step;
-        std::cout << "center_id: " << center_id << std::endl;
         float coef = 1.0 - static_cast<float>(center_id) / (img.step / 2);
-        std::cout << "coef: " << coef << std::endl;
-        float angular_z = 0.1 * coef;
-        drive_robot(0.01, angular_z);
+        float linear_x = 0.5 * (1.2 - std::abs(coef));
+        float angular_z = 2.0 * coef;
+        drive_robot(linear_x, angular_z);
         white_pixel_id.clear();
     }
-    // ros::Duration(3).sleep();
 }
 
 int main(int argc, char** argv)

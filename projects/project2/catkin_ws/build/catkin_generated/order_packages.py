@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/robond/workspace/RoboticsSoftwareEngineer/projects/project2/catkin_ws/src"
-whitelisted_packages = "".split(';') if "" != "" else []
-blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/robond/workspace/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/robond/workspace/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel;/opt/ros/kinetic" != "" else []
+source_root_dir = '/home/sanjar/UW/Udacity/RoboticsSoftwareEngineer/projects/project2/catkin_ws/src'
+whitelisted_packages = ''.split(';') if '' != '' else []
+blacklisted_packages = ''.split(';') if '' != '' else []
+underlay_workspaces = '/home/sanjar/UW/Udacity/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/sanjar/UW/Udacity/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel;/opt/ros/noetic' != '' else []

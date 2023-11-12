@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/sanjar/UW/Udacity/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel/include/ball_chaser/DriveToTarget.h"
   "CMakeFiles/ball_chaser_generate_messages_cpp"
-  "/home/robond/workspace/RoboticsSoftwareEngineer/projects/project2/catkin_ws/devel/include/ball_chaser/DriveToTarget.h"
 )
 
 # Per-language clean rules from dependency scanning.
