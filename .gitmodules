@@ -1,1 +1,7 @@
 
+[submodule "project1"]
+	path = project1
+	url = git@github.com:SanjarNormuradov/RoboticsSoftwareEngineer_Project1.git
+[submodule "project2"]
+	path = project2
+	url = git@github.com:SanjarNormuradov/RoboticsSoftwareEngineer_Project2.git
