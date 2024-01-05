@@ -1,4 +1,0 @@
-<launch>
-  <!--RVIZ-->
-  <node pkg="rviz" type="rviz" name="rviz" args="-d ~/RoboticsSoftwareEngineer/project5/catkin_ws/src/worlds/office"/>
-</launch>
